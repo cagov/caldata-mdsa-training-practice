@@ -6,6 +6,8 @@ from io import StringIO
 
 # Prompt for CSV file path
 csv_url = 'https://data.cnra.ca.gov/dataset/3f96977e-2597-4baa-8c9b-c433cea0685e/resource/a9e7ef50-54c3-4031-8e44-aa46f3c660fe/download/lab_results.csv'
+print(f"Downloading CSV from {csv_url}...")
+print("This may take a few minutes for large datasets...")
 
 # Read CSV file with proper headers to avoid 403 errors
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
@@ -75,10 +77,10 @@ try:
     temp_csv = "/tmp/lab_results_temp.csv"
     df.to_csv(temp_csv, index=False, header=False)
 
-    cursor.execute(f"PUT file://{temp_csv} @%{full_table_path}")
+    cursor.execute(f"PUT file://{temp_csv} @%{table_name}")
     cursor.execute(f"""
         COPY INTO {full_table_path}
-        FROM @%{full_table_path}
+        FROM @%{table_name}
         FILE_FORMAT = (TYPE = CSV FIELD_OPTIONALLY_ENCLOSED_BY = '"' SKIP_HEADER = 0)
         ON_ERROR = CONTINUE
     """)
