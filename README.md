@@ -1,8 +1,8 @@
-# CalData MDSA Training - Transform Project
+# CalData MDSA training practice repo
 
 This is the dbt project for CalData MDSA training exercises using California water quality data.
 
-## Quick Start
+## Quick start
 
 ### Prerequisites
 
@@ -71,11 +71,11 @@ uv run dbt docs generate
 uv run dbt docs serve
 ```
 
-### Loading Data with Python
+### Loading data with Python
 
 **Note:** This is only required for at least one trainee to load the raw data. Most trainees can skip this section and work with data that's already been loaded.
 
-#### Setup for Python Script
+#### Setup for Python script
 
 Before running the Python script, you need to set environment variables for Snowflake authentication. Add these to your shell config (`~/.zshrc`, `~/.bashrc`, or `~/.bash_profile`):
 
@@ -91,7 +91,7 @@ export SNOWFLAKE_ROLE=LOADER_DEV
 
 Open a new terminal or run `source ~/.zshrc` (or your shell config file) to apply the changes.
 
-#### Running the Script
+#### Running the script
 
 To load water quality lab results data into Snowflake:
 
@@ -105,7 +105,7 @@ This script:
 - Creates a table in `RAW_DEV.WATER_QUALITY.LAB_RESULTS_TEST_2026`
 - Loads the data using PUT/COPY commands
 
-## Project Structure
+## Project structure
 
 ```
 transform/
@@ -122,7 +122,7 @@ transform/
     └── load_water_quality_data.py
 ```
 
-## Learn More
+## Learn more
 
 For detailed training materials, see the [CalData MDSA Training documentation](https://github.com/cagov/caldata-mdsa-training).
 
