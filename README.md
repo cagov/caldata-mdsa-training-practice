@@ -11,6 +11,9 @@ This is the dbt project for CalData MDSA training exercises using California wat
 - Snowflake account access
 - Git
 
+!!! Note
+    Your team may already be using a different package to manage Python virtual environments like [pixi](https://pixi.prefix.dev/latest/) or [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). Although this guide uses `uv`, other package managers will work with modifications.
+
 ### Setup
 
 1. **Clone this repository**
