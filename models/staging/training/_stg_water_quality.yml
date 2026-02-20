@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: stg_water_quality__stations
+    description: Staging model for stations.
+
+  - name: stg_water_quality__lab_results
+    description: Statging model for lab results.

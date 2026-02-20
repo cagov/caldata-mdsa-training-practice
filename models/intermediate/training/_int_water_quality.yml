@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: int_water_quality__stations_per_county_with_parameter_2024_counted
+    description: |
+      This model returns a count of the stations per county that
+      reported a parameter of Dissolved Chloride for the year
+      2024 sorted from greatest to least.
+    columns:
+      - name: county_name
+        description: County where sample collected.
+      - name: station_count
+        description: Count of stations that reported a parameter of Dissolved Chloride.
