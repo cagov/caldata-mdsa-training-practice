@@ -37,7 +37,7 @@ sources:
           - name: status
             description: Data review status.
           - name: county_name
-            description: County where sample collected.
+            description: County where sample was collected.
           - name: sample_code
             description: Unique DWR lab and field data sample code.
           - name: sample_date
@@ -82,7 +82,7 @@ sources:
           - name: longitude
             description: Longitude (NAD83).
           - name: county_name
-            description: County where sample collected.
+            description: County where sample was collected.
           - name: sample_code
             description: Unique DWR lab and field data sample code.
           - name: sample_date_min
