@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: int_water_quality__counties
+    description: tk
+    columns:
+      - name: <column name here>
+        description: <column description here>
+
+  - name: int_water_quality__counties
+    description: tk
+    columns:
+      - name: <column name here>
+        description: <column description here>
+
+  - name: int_water_quality__top_parameters_per_station
+    description: tk
+    columns:
+      - name: <column name here>
+        description: <column description here>
+      
