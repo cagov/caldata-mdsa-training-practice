@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_water_quality__stations
+    description: <model description here>
+    columns:
+      - name: <column name here>
+        description: <column description here>
+
+  - name: stg_water_quality__lab_results
+    description: <model description here>
+    columns:
+      - name: <column name here>
+        description: <column description here>

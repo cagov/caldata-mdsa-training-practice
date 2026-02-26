@@ -1,0 +1,22 @@
+name: 'caldata_mdsa_training'
+version: '1.0.0'
+config-version: 2
+
+profile: 'caldata_mdsa_training'
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  caldata_mdsa_training:
+    1_staging:
+      +materialized: view
+    2_intermediate:
+      +materialized: view
+    3_marts:
+      +materialized: table

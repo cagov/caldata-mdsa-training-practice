@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: int_water_quality__counties
+    description: |
+      This is model is for demo purposes. Each row represents 
+      one California county with its associated FIPS code.
+    config:
+      materialized: table
+    columns:
+      - name: county_name
+        description: County name of where a sample was collected.
+      - name: county_fips
+        description: |
+          Federal Information Processing Standards (FIPS) code for the county.
+          A standardized 5-digit code used to uniquely identify U.S. counties.
+
+  - name: int_water_quality__lab_results_enriched
+    description: <model description here>
+    columns:
+      - name: <column name here>
+        description: <column description here>

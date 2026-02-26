@@ -1,0 +1,1 @@
+select * from RAW_DEV.WATER_QUALITY.LAB_RESULTS
