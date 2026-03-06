@@ -45,7 +45,7 @@ try:
     cursor = conn.cursor()
     database_name = os.environ["SNOWFLAKE_DATABASE"].upper()
     schema_name = "WATER_QUALITY".upper()
-    table_name = "LAB_RESULTS_TEST_2026".upper() # Ensure table name is uppercase
+    table_name = "LAB_RESULTS".upper() # Ensure table name is uppercase
 
     full_table_path = f"{database_name}.{schema_name}.{table_name}"
 
