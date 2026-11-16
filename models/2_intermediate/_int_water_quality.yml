@@ -3,7 +3,7 @@ version: 2
 models:
   - name: int_water_quality__counties
     description: |
-      This is model is for demo purposes. Each row represents 
+      This is model is for demo purposes. Each row represents
       one California county with its associated FIPS code.
     config:
       materialized: table
