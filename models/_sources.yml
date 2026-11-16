@@ -24,7 +24,7 @@ sources:
               based on DWR station naming conventions.
           - name: station_number
             description: |
-              Unique DWR station code based on DWR station numbering 
+              Unique DWR station code based on DWR station numbering
               conventions.
           - name: station_type
             description: |
@@ -71,7 +71,7 @@ sources:
               based on DWR station naming conventions.
           - name: station_number
             description: |
-              Unique DWR station code based on DWR station numbering 
+              Unique DWR station code based on DWR station numbering
               conventions.
           - name: station_type
             description: |
@@ -87,9 +87,9 @@ sources:
             description: Unique DWR lab and field data sample code.
           - name: sample_date_min
             description: |
-              Date of the first sample collection event on record 
+              Date of the first sample collection event on record
               for a given DWR sampling location.
           - name: sample_date_max
             description: |
-              Date of the last sample collection event on record 
+              Date of the last sample collection event on record
               for a given DWR sampling location.
